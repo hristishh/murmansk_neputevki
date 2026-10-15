@@ -2,148 +2,580 @@ media:
   input: images
   output: /images
 content:
-  - name: site
-    label: Настройки тура
-    type: file
-    path: content/site.json
+- name: site
+  label: Настройки тура
+  type: file
+  path: content/site.json
+  fields:
+  - name: base_price
+    label: Базовая стоимость (₽)
+    type: number
+  - name: hero_eyebrow
+    label: Надпись над заголовком
+    type: string
+  - name: hero_title_line1
+    label: Главный заголовок — строка 1
+    type: string
+  - name: hero_title_line2
+    label: Главный заголовок — строка 2
+    type: string
+  - name: hero_title_line3
+    label: Главный заголовок — строка 3
+    type: string
+  - name: hero_description
+    label: Текст на первом экране
+    type: text
+  - name: intro_text
+    label: О поездке — абзац 1
+    type: text
+  - name: intro_second_text
+    label: О поездке — абзац 2
+    type: text
+  - name: hibiny_description
+    label: Хибины — описание
+    type: text
+  - name: included_text
+    label: Что включено
+    type: text
+  - name: excluded_text
+    label: Что отдельно
+    type: text
+  - name: telegram_url
+    label: Telegram ссылка
+    type: string
+  - name: instagram_url
+    label: Instagram ссылка
+    type: string
+  - name: days
+    label: Программа по дням
+    type: object
+    list: true
     fields:
-      - name: base_price
-        label: Базовая стоимость (₽)
-        type: number
-      - name: hero_eyebrow
-        label: Надпись над заголовком
-        type: string
-      - name: hero_title_line1
-        label: Главный заголовок — строка 1
-        type: string
-      - name: hero_title_line2
-        label: Главный заголовок — строка 2
-        type: string
-      - name: hero_title_line3
-        label: Главный заголовок — строка 3
-        type: string
-      - name: hero_description
-        label: Текст на первом экране
-        type: text
-      - name: intro_text
-        label: О поездке — абзац 1
-        type: text
-      - name: intro_second_text
-        label: О поездке — абзац 2
-        type: text
-      - name: hibiny_description
-        label: Хибины — описание
-        type: text
-      - name: included_text
-        label: Что включено
-        type: text
-      - name: excluded_text
-        label: Что отдельно
-        type: text
-      - name: telegram_url
-        label: Telegram ссылка
-        type: string
-      - name: instagram_url
-        label: Instagram ссылка
-        type: string
-      - name: intro_heading
-        label: О поездке — заголовок
-        type: text
-      - name: facts_heading
-        label: Главное — заголовок
-        type: text
-      - name: route_heading
-        label: Маршрут — заголовок
-        type: text
-      - name: days_heading
-        label: Программа — заголовок
-        type: text
-      - name: aurora_heading
-        label: Сияние — заголовок
-        type: text
-      - name: hibiny_heading
-        label: Хибины — заголовок
-        type: text
-      - name: people_heading
-        label: Команда — заголовок
-        type: text
-      - name: constructor_heading
-        label: Конструктор — заголовок
-        type: text
-      - name: constructor_description
-        label: Конструктор — описание
-        type: text
-      - name: house_heading
-        label: Проживание — заголовок
-        type: text
-      - name: included_heading
-        label: В стоимость — заголовок
-        type: text
-      - name: faq_heading
-        label: Вопросы — заголовок
-        type: text
-      - name: end_heading
-        label: Финальный заголовок
-        type: text
-      - name: days
-        label: Программа по дням
-        type: object
-        list: true
-        fields:
-          - name: number
-            label: Номер дня
-            type: string
-          - name: title
-            label: Заголовок
-            type: string
-          - name: description
-            label: Описание
-            type: text
-          - name: included
-            label: Что входит (через |)
-            type: text
-          - name: image
-            label: Путь к фото
-            type: image
-          - name: note
-            label: Примечание
-            type: text
-      - name: activities
-        label: Дополнительные активности
-        type: object
-        list: true
-        fields:
-          - name: name
-            label: Название
-            type: string
-          - name: description
-            label: Описание
-            type: text
-          - name: price
-            label: Цена в рублях
-            type: number
-          - name: image
-            label: Фотография
-            type: image
-      - name: images
-        label: Фотографии основных блоков
-        type: object
-        fields:
-          - name: hero_poster
-            label: Постер первого экрана
-            type: image
-          - name: intro_first
-            label: О поездке — фото 1
-            type: image
-          - name: intro_second
-            label: О поездке — фото 2
-            type: image
-          - name: intro_third
-            label: О поездке — фото 3
-            type: image
-          - name: hibiny_first
-            label: Хибины — фото 1
-            type: image
-          - name: hibiny_second
-            label: Хибины — фото 2
-            type: image
+    - name: number
+      label: Номер дня
+      type: string
+    - name: title
+      label: Заголовок
+      type: string
+    - name: description
+      label: Описание
+      type: text
+    - name: included
+      label: Что входит (через |)
+      type: text
+    - name: image
+      label: Путь к фото
+      type: image
+    - name: note
+      label: Примечание
+      type: text
+  - name: activities
+    label: Дополнительные активности
+    type: object
+    list: true
+    fields:
+    - name: name
+      label: Название
+      type: string
+    - name: description
+      label: Описание
+      type: text
+    - name: price
+      label: Цена в рублях
+      type: number
+    - name: image
+      label: Фотография
+      type: image
+  - name: images
+    label: Фотографии основных блоков
+    type: object
+    fields:
+    - name: hero_poster
+      label: Постер первого экрана
+      type: image
+    - name: intro_first
+      label: О поездке — фото 1
+      type: image
+    - name: intro_second
+      label: О поездке — фото 2
+      type: image
+    - name: intro_third
+      label: О поездке — фото 3
+      type: image
+    - name: hibiny_first
+      label: Хибины — фото 1
+      type: image
+    - name: hibiny_second
+      label: Хибины — фото 2
+      type: image
+- name: interface
+  label: Все экраны · тексты и кнопки
+  type: file
+  path: content/interface.json
+  fields:
+  - name: header
+    label: Шапка и меню
+    type: object
+    fields:
+    - name: t001
+      label: 01 · НЕПУТЁВКИ
+      type: string
+    - name: t002
+      label: 02 · МОЯ ПОЕЗДКА
+      type: string
+    - name: t003
+      label: 03 · Меню +
+      type: string
+    - name: t004
+      label: 04 · О поездке
+      type: string
+    - name: t005
+      label: 05 · Маршрут
+      type: string
+    - name: t006
+      label: 06 · Дни
+      type: string
+    - name: t007
+      label: 07 · Кто мы
+      type: string
+    - name: t008
+      label: 08 · Конструктор
+      type: string
+    - name: t009
+      label: 09 · Вопросы
+      type: string
+  - name: hero
+    label: Первый экран
+    type: object
+    fields:
+    - name: t001
+      label: 01 · НЕПУТЁВКИ // СЕВЕР 2027
+      type: string
+    - name: t002
+      label: 02 · КАК ДАЛЕКО
+      type: string
+    - name: t003
+      label: 03 · НА СЕВЕР ТЫ
+      type: string
+    - name: t004
+      label: 04 · ГОТОВ ЗАЙТИ?
+      type: string
+    - name: t005
+      label: 05 · БАРЕНЦЕВО МОРЕ · ТЕРИБЕРКА · ХИБИНЫ
+      type: string
+    - name: t006
+      label: 06 · СЕВЕРНОЕ СИЯНИЕ · И ДВАДЦАТЬ ЧЕЛОВЕК,
+      type: string
+    - name: t007
+      label: 07 · КОТОРЫЕ ПОКА НЕ ЗНАЮТ ДРУГ ДРУГА.
+      type: string
+    - name: t008
+      label: 08 · 5 ДНЕЙ / 4 НОЧИ · ЗИМА 2027
+      type: string
+    - name: t009
+      label: 09 · ↓
+      type: string
+    - name: video_src
+      label: Видео первого экрана (путь)
+      type: string
+  - name: intro
+    label: О поездке
+    type: object
+    fields:
+    - name: t001
+      label: 01 · ЧТО ВООБЩЕ ПРОИСХОДИТ?
+      type: string
+    - name: t002
+      label: 02 · МЫ ЕДЕМ
+      type: string
+    - name: t003
+      label: 03 · НА СЕВЕР
+      type: string
+    - name: t004
+      label: 04 · ВЫ С НАМИ?
+      type: string
+    - name: t005
+      label: 05 · Собираем компанию и отправляемся на Кольский полуостров. Будем до…
+      type: text
+    - name: t006
+      label: 06 · У нас есть общая программа и конструктор дополнительных приключен…
+      type: text
+    - name: image_007
+      label: Фото · Команда в путешествии
+      type: image
+    - name: image_008
+      label: Фото · Команда на дороге в тумане
+      type: image
+    - name: image_009
+      label: Фото · Команда в морском путешествии
+      type: image
+  - name: facts
+    label: Главное о поездке
+    type: object
+    fields:
+    - name: t001
+      label: 01 · ЧТО НУЖНО ЗНАТЬ
+      type: string
+    - name: t002
+      label: 02 · ГЛАВНОЕ
+      type: string
+    - name: t003
+      label: 03 · В НЕСКОЛЬКО
+      type: string
+    - name: t004
+      label: 04 · СТРОК
+      type: string
+    - name: t005
+      label: 05 · Куда
+      type: string
+    - name: t006
+      label: 06 · Мурманск, Териберка, Дальние Зеленцы; Хибины отдельно
+      type: string
+    - name: t007
+      label: 07 · Когда
+      type: string
+    - name: t008
+      label: 08 · Зима 2027
+      type: string
+    - name: t009
+      label: 09 · Сколько
+      type: string
+    - name: t010
+      label: 10 · 5 дней / 4 ночи
+      type: string
+    - name: t011
+      label: 11 · Компания
+      type: string
+    - name: t012
+      label: 12 · Около 20 человек
+      type: string
+    - name: t013
+      label: 13 · Сияние
+      type: string
+    - name: t014
+      label: 14 · Выезды в базе, зависит от погоды
+      type: string
+    - name: t015
+      label: 15 · Стоимость
+      type: string
+    - name: t016
+      label: 16 · Стоимость поездки
+      type: string
+  - name: route
+    label: Маршрут
+    type: object
+    fields:
+    - name: t001
+      label: 01 · МАРШРУТ // СХЕМА
+      type: string
+    - name: t002
+      label: 02 · ТРИ ТОЧКИ
+      type: string
+    - name: t003
+      label: 03 · ПЯТЬ ДНЕЙ
+      type: string
+    - name: t004
+      label: 04 · ОДИН СЕВЕР
+      type: string
+    - name: t005
+      label: 05 · Мурманск → Териберка → Дальние Зеленцы.
+      type: string
+    - name: t006
+      label: 06 · После основной поездки — ещё два дня в Хибинах.
+      type: string
+  - name: days
+    label: Программа по дням — общие подписи
+    type: object
+    fields:
+    - name: t001
+      label: 01 · МАРШРУТ ПО ДНЯМ
+      type: string
+    - name: t002
+      label: 02 · ПЯТЬ ДНЕЙ
+      type: string
+    - name: t003
+      label: 03 · ПЯТЬ ИСТОРИЙ
+      type: string
+    - name: t004
+      label: 04 · В ОБЩЕЙ ПРОГРАММЕ
+      type: string
+    - name: image_005
+      label: Фото · Фотография места
+      type: image
+  - name: aurora
+    label: Северное сияние
+    type: object
+    fields:
+    - name: t001
+      label: 01 · СЕВЕРНОЕ СИЯНИЕ // В БАЗЕ
+      type: string
+    - name: t002
+      label: 02 · У СЕВЕРНОГО
+      type: string
+    - name: t003
+      label: 03 · СИЯНИЯ НЕТ
+      type: string
+    - name: t004
+      label: 04 · РАСПИСАНИЯ
+      type: string
+    - name: t005
+      label: 05 · Будем следить за прогнозом и искать подходящие погодные окна. Ког…
+      type: text
+  - name: hibiny
+    label: Хибины
+    type: object
+    fields:
+    - name: t001
+      label: 01 · ПРОДОЛЖЕНИЕ ПУТЕШЕСТВИЯ
+      type: string
+    - name: t002
+      label: 02 · ЕЩЁ ДВА ДНЯ
+      type: string
+    - name: t003
+      label: 03 · В ХИБИНАХ
+      type: string
+    - name: t004
+      label: '04 · После пяти дней основного тура можно продолжить путешествие: ещё …'
+      type: text
+    - name: t005
+      label: 05 · + ДОБАВИТЬ ХИБИНЫ В МОЯ ПОЕЗДКА
+      type: string
+    - name: image_006
+      label: Фото · Хибины — горы в розовом свете
+      type: image
+    - name: image_007
+      label: Фото · Заснеженный Кировск и горы
+      type: image
+  - name: people
+    label: Команда
+    type: object
+    fields:
+    - name: t001
+      label: 01 · А КТО ВООБЩЕ ТАКИЕ НЕПУТЁВКИ?
+      type: string
+    - name: t002
+      label: 02 · МЫ УЖЕ
+      type: string
+    - name: t003
+      label: 03 · КОЕ-КУДА
+      type: string
+    - name: t004
+      label: 04 · СЪЕЗДИЛИ
+      type: string
+    - name: t005
+      label: 05 · Непутёвки — компания людей, которым постоянно хочется куда-нибудь…
+      type: text
+    - name: t006
+      label: 06 · НАШ АЛЬБОМ
+      type: string
+    - name: t007
+      label: 07 · ←
+      type: string
+    - name: t008
+      label: 08 · →
+      type: string
+    - name: t009
+      label: 09 · ЛИСТАЙ → / СВАЙПАЙ НА ТЕЛЕФОНЕ
+      type: string
+  - name: constructor
+    label: Конструктор
+    type: object
+    fields:
+    - name: t001
+      label: 01 · КОНСТРУКТОР
+      type: string
+    - name: t002
+      label: 02 · А КАКОЙ СЕВЕР
+      type: string
+    - name: t003
+      label: 03 · ТВОЙ?
+      type: string
+    - name: t004
+      label: 04 · База уже включает главные приключения. Добавляй только то, что де…
+      type: string
+    - name: t005
+      label: 05 · МОЯ ПОЕЗДКА
+      type: string
+    - name: t006
+      label: 06 · МОЯ ПОЕЗДКА →
+      type: string
+  - name: house
+    label: Проживание
+    type: object
+    fields:
+    - name: t001
+      label: 01 · ГДЕ БУДЕМ ЖИТЬ?
+      type: string
+    - name: t002
+      label: 02 · НАШ ДОМ
+      type: string
+    - name: t003
+      label: 03 · НА НЕСКОЛЬКО ДНЕЙ
+      type: string
+    - name: t004
+      label: 04 · После долгого дня будем возвращаться в тепло, ужинать и собиратьс…
+      type: text
+  - name: included
+    label: Стоимость и включённое
+    type: object
+    fields:
+    - name: t001
+      label: 01 · ПРО ДЕНЬГИ
+      type: string
+    - name: t002
+      label: 02 · ЧТО ВХОДИТ
+      type: string
+    - name: t003
+      label: 03 · В БАЗУ?
+      type: string
+    - name: t004
+      label: 04 · ВКЛЮЧЕНО
+      type: string
+    - name: t005
+      label: 05 · Проживание · общая логистика · Териберка · выезды за сиянием при …
+      type: text
+    - name: t006
+      label: 06 · ОТДЕЛЬНО
+      type: string
+    - name: t007
+      label: 07 · Перелёт · личное питание · выбранные дополнительные активности (в…
+      type: text
+  - name: faq
+    label: Частые вопросы
+    type: object
+    fields:
+    - name: t001
+      label: 01 · ВОПРОСЫ
+      type: string
+    - name: t002
+      label: 02 · А ЕСЛИ..
+      type: string
+    - name: t003
+      label: 03 · Я никого не знаю?
+      type: string
+    - name: t004
+      label: 04 · Это нормально. Для знакомства и собираемся!
+      type: string
+    - name: t005
+      label: 05 · Не будет северного сияния?
+      type: string
+    - name: t006
+      label: 06 · Мы выбираем погодные окна, но природное явление гарантировать нев…
+      type: string
+    - name: t007
+      label: 07 · Можно без дополнительных активностей?
+      type: string
+    - name: t008
+      label: 08 · Да. База задумана как полноценная поездка.
+      type: string
+    - name: t009
+      label: 09 · А если закроют дорогу?
+      type: string
+    - name: t010
+      label: 10 · На Севере погода решает многое, поэтому при закрытии дороги меняе…
+      type: text
+    - name: t011
+      label: 11 · Когда откроется бронирование?
+      type: string
+    - name: t012
+      label: 12 · О старте бронирования расскажем в наших соцсетях.
+      type: string
+  - name: end
+    label: Последний экран
+    type: object
+    fields:
+    - name: t001
+      label: 01 · НЕПУТЁВКИ // СЕВЕР 2027
+      type: string
+    - name: t002
+      label: 02 · МЫ ПОЕХАЛИ
+      type: string
+    - name: t003
+      label: 03 · ВЫ С НАМИ?
+      type: string
+    - name: t004
+      label: 04 · Пять дней. Баренцево море. Северное сияние. И люди, с которыми мы…
+      type: string
+    - name: t005
+      label: 05 · СОБРАТЬ СВОЙ СЕВЕР →
+      type: string
+  - name: footer
+    label: Подвал
+    type: object
+    fields:
+    - name: t001
+      label: 01 · НЕПУТЁВКИ // 2027
+      type: string
+    - name: t002
+      label: 02 · Telegram ↗
+      type: string
+    - name: t003
+      label: 03 · Instagram ↗
+      type: string
+  - name: cart
+    label: Корзина и форма
+    type: object
+    fields:
+    - name: t001
+      label: 01 · НЕПУТЁВКИ // КОНСТРУКТОР
+      type: string
+    - name: t002
+      label: 02 · ТВОЯ ПОЕЗДКА
+      type: string
+    - name: t003
+      label: 03 · ИТОГО
+      type: string
+    - name: t004
+      label: 04 · ← ВЕРНУТЬСЯ
+      type: string
+    - name: t005
+      label: 05 · ОСТАВИТЬ ЗАЯВКУ ↓
+      type: string
+    - name: t006
+      label: 06 · ТВОЙ TELEGRAM
+      type: string
+    - name: t007
+      label: 07 · Telegram нужен только для связи по заявке.
+      type: string
+    - name: t008
+      label: 08 · ОТПРАВИТЬ ЗАЯВКУ →
+      type: string
+  - name: gallery
+    label: Фотоальбом команды — порядок и фотографии
+    type: object
+    list: true
+    fields:
+    - name: image
+      label: Фотография
+      type: image
+    - name: alt
+      label: Подпись для доступности
+      type: string
+  - name: controls
+    label: Кнопки, действия и уведомления
+    type: object
+    fields:
+    - name: day_addon_index
+      label: Активность для кнопки в днях (номер с нуля)
+      type: number
+    - name: day_addon_days
+      label: В каких днях показывать кнопку (например 2|3)
+      type: string
+    - name: day_addon_add
+      label: Кнопка дня — до выбора
+      type: string
+    - name: day_addon_selected
+      label: Кнопка дня — после выбора
+      type: string
+    - name: hibiny_addon_index
+      label: Активность для кнопки Хибин (номер с нуля)
+      type: number
+    - name: add_button
+      label: Кнопка активности — до выбора
+      type: string
+    - name: selected_button
+      label: Кнопка активности — после выбора
+      type: string
+    - name: submit_success
+      label: Сообщение после отправки заявки
+      type: text
