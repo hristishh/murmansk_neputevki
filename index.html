@@ -91,7 +91,7 @@ header{padding:10px var(--page-pad);gap:14px}
 <label for="np-booking-username" style="display:block;margin-bottom:10px;font-weight:800">ТВОЙ TELEGRAM</label>
 <input id="np-booking-username" name="telegram" placeholder="@username" autocomplete="off" required maxlength="33" style="width:100%;padding:14px;border:1px solid #888;border-radius:5px;color:#111;background:#fff;font-size:18px" />
 <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0" />
-<label style="display:flex;gap:10px;align-items:start;margin:15px 0;font-size:14px"><input id="np-booking-consent" type="checkbox" required style="margin-top:4px"/> <span>Согласен(на) на обработку Telegram-ника для связи по заявке</span></label>
+<p style="font-size:12px;opacity:.72;margin:12px 0">Telegram нужен только для связи по заявке.</p>
 <button id="np-booking-submit" type="submit" style="width:100%">ОТПРАВИТЬ ЗАЯВКУ →</button>
 <p id="np-booking-status" role="status" aria-live="polite" style="margin-top:12px"></p>
 </form><p class="muted"></p></div></div><script>async function startNeputevki(){
@@ -143,7 +143,6 @@ async function submitNeputevki(event){
  const status=document.getElementById('np-booking-status');
  const button=document.getElementById('np-booking-submit');
  if(!/^[A-Za-z0-9_]{5,32}$/.test(username)){status.textContent='Проверь ник: от 5 до 32 латинских букв, цифр или _';return;}
- if(!document.getElementById('np-booking-consent').checked){status.textContent='Нужно согласие на обработку Telegram-ника для связи по заявке.';return;}
  button.disabled=true;status.textContent='Отправляем заявку…';
  try{
    const response=await fetch('https://neputevki-telegram-bot.neputevki.workers.dev/api/booking',{
@@ -155,11 +154,11 @@ async function submitNeputevki(event){
    status.textContent='Готово! Заявка '+data.id+' отправлена. Скоро напишем тебе в Telegram 💙';
    form.querySelector('input[name=website]').value='';
    document.getElementById('np-booking-username').disabled=true;
-   document.getElementById('np-booking-consent').disabled=true;
+
  }catch(e){status.textContent=e.message||'Ошибка отправки. Попробуй ещё раз.';button.disabled=false;}
 }
 window.openCart=openCart;window.bookNeputevki=bookNeputevki;window.submitNeputevki=submitNeputevki;
-function closeCart(){const modal=document.getElementById('cartmodal');modal.classList.remove('open');modal.style.removeProperty('display');modal.style.removeProperty('visibility');modal.style.removeProperty('opacity');document.body.style.overflow=''}document.addEventListener('keydown',e=>{if(e.key==='Escape')closeCart()});updateCart();setDay(0);document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.nav').classList.remove('open')));
+function closeCart(){const modal=document.getElementById('cartmodal');modal.classList.remove('open');modal.style.removeProperty('display');modal.style.removeProperty('visibility');modal.style.removeProperty('opacity');document.body.style.overflow=''}window.closeCart=closeCart;document.addEventListener('keydown',e=>{if(e.key==='Escape')closeCart()});updateCart();setDay(0);document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.nav').classList.remove('open')));
 /* Native momentum scrolling on mobile, seamless infinite gallery */
 (function(){
  const viewport=document.getElementById('team-carousel');if(!viewport)return;
