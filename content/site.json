@@ -1,11 +1,11 @@
 {
-  "base_price": 25000,
+  "base_price": 59000,
   "hero_eyebrow": "НЕПУТЁВКИ // СЕВЕР 2027",
   "hero_title_line1": "КАК ДАЛЕКО",
   "hero_title_line2": "НА СЕВЕР ТЫ",
   "hero_title_line3": "ГОТОВ ЗАЙТИ?",
-  "hero_description": "БАРЕНЦЕВО МОРЕ · ТЕРИБЕРКА · ХИБИНЫ\nСЕВЕРНОЕ СИЯНИЕ · И ДВАДЦАТЬ ЧЕЛОВЕК,\nКОТОРЫЕ ПОКА НЕ ЗНАЮТ ДРУГ ДРУГА.\n\n5 ДНЕЙ / 4 НОЧИ · 3-8 ФЕВРАЛЯ 2027",
-  "intro_text": "Собираем компанию и отправляемся на Кольский полуостров. Там мы будем добираться до Баренцева моря, искать северное сияние, гулять по заснеженным городам и забираться туда, куда обычно не доезжают.",
+  "hero_description": "БАРЕНЦЕВО МОРЕ · ТЕРИБЕРКА · ХИБИНЫ\nСЕВЕРНОЕ СИЯНИЕ · И ДВАДЦАТЬ ЧЕЛОВЕК,\nКОТОРЫЕ ПОКА НЕ ЗНАЮТ ДРУГ ДРУГА.\n\n5 ДНЕЙ / 4 НОЧИ · ЗИМА 2027",
+  "intro_text": "Собираем компанию и отправляемся на Кольский полуостров. Будем добираться до Баренцева моря, искать северное сияние, гулять по заснеженным городам и забираться туда, куда обычно не доезжают.",
   "intro_second_text": "У нас есть общая программа и конструктор дополнительных приключений. Каждый сможет собрать свой Север.",
   "hibiny_description": "После пяти дней основного тура можно продолжить путешествие: ещё два организованных дня в Кировске и Хибинах. Добавь продолжение в конструкторе — его стоимость прибавится к стоимости поездки. Отдельно оплачивается только ski-pass.",
   "included_text": "Проживание · общая логистика · Териберка · выезды за сиянием при подходящей погоде · совместная программа · сопровождение.",
@@ -18,75 +18,86 @@
       "title": "ВСЕ ДОРОГИ ВЕДУТ В МУРМАНСК",
       "description": "Собираемся в Мурманске, заселяемся, гуляем и вечером встречаемся всей компанией за большим столом.",
       "included": "Заселение|Свободное время|Общий ужин и знакомство",
-      "image": "/images/days/day-1.webp"
+      "image": "./images/days/day-1.webp",
+      "note": ""
     },
     {
       "number": "ДЕНЬ 02",
       "title": "ТАМ, ГДЕ ЗАКАНЧИВАЕТСЯ ДОРОГА",
       "description": "Уезжаем к Баренцеву морю. Териберка, побережье, водопад, огромные камни и вечер у океана.",
       "included": "Дорога в Териберку|Побережье|Снегоходные сани",
-      "image": "/images/days/day-2.webp"
+      "image": "./images/days/day-2.webp",
+      "note": ""
     },
     {
       "number": "ДЕНЬ 03",
       "title": "ЕЩЁ НЕМНОГО ОКЕАНА",
       "description": "День для собственной маленькой истории: море, прогулки, фотографии. После обеда — обратно в Мурманск.",
       "included": "Свободное время|Прогулки|Возвращение",
-      "image": "/images/days/day-3.webp"
+      "image": "./images/days/day-3.webp",
+      "note": ""
     },
     {
       "number": "ДЕНЬ 04",
       "title": "ТУДА, ГДЕ ДОРОГ БОЛЬШЕ НЕТ",
       "description": "Главный экспедиционный день. Отправляемся к Дальним Зеленцам — туда, где северное побережье кажется бесконечным.",
       "included": "Экспедиционный выезд|Северное побережье|Горячий перекус",
-      "image": "/images/days/day-4.webp"
+      "image": "./images/days/day-4.webp",
+      "note": ""
     },
     {
       "number": "ДЕНЬ 05",
       "title": "НУ ВОТ И ВСЁ. ПОЧТИ.",
       "description": "Последнее утро в Мурманске, кофе, фотографии, сувениры, прощания и дорога домой.",
       "included": "Завтрак и выселение|Свободное время|Отъезд",
-      "image": "/images/days/day-5.webp"
+      "image": "./images/days/day-5.webp",
+      "note": ""
     }
   ],
   "activities": [
     {
       "name": "Баренцево море",
       "description": "Морская прогулка и поиск китов",
-      "price": 9000
+      "price": 9000,
+      "image": "https://images.unsplash.com/photo-1500534623283-312aade485b7?w=800"
     },
     {
       "name": "Баня у океана",
       "description": "После долгого дня на морозе",
-      "price": 5000
+      "price": 5000,
+      "image": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=800"
     },
     {
       "name": "Снегоходное сафари",
       "description": "Отдельная поездка с проводниками",
-      "price": 11000
+      "price": 11000,
+      "image": "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=800"
     },
     {
       "name": "Хибины · после тура",
       "description": "Два организованных дня после тура · отдельно только ski-pass",
-      "price": 12000
+      "price": 12000,
+      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800"
     },
     {
       "name": "Арктический ужин",
       "description": "Северная кухня и общая компания",
-      "price": 4000
+      "price": 4000,
+      "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800"
     },
     {
       "name": "Морская рыбалка",
       "description": "Дополнительный выход на воду",
-      "price": 7000
+      "price": 7000,
+      "image": "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=800"
     }
   ],
   "images": {
-    "hero_poster": "/images/north/north-12.webp",
-    "intro_first": "/images/north/north-01.webp",
-    "intro_second": "/images/north/north-08.webp",
-    "intro_third": "/images/north/north-06.webp",
-    "hibiny_first": "/images/north/north-17.webp",
-    "hibiny_second": "/images/north/north-16.webp"
+    "hero_poster": "./images/north/north-12.webp",
+    "intro_first": "./images/north/north-01.webp",
+    "intro_second": "./images/north/north-08.webp",
+    "intro_third": "./images/north/north-06.webp",
+    "hibiny_first": "./images/north/north-17.webp",
+    "hibiny_second": "./images/north/north-16.webp"
   }
 }
