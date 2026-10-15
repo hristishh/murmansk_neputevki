@@ -153,7 +153,7 @@ async function submitNeputevki(event){
      headers:{'Content-Type':'text/plain;charset=utf-8'},
      body:JSON.stringify({username:'@'+username,activities:activities,total:amount===null?null:amount})
    });
-   status.textContent='Заявка передана на обработку. Проверяем запись в таблице; если она не появилась, свяжись с организаторами напрямую.';
+   status.textContent='Ура, заявка отправлена! Скоро свяжемся с тобой! А если возникнут вопросы — пиши @hristishh.';
    button.textContent='ЗАЯВКА ПЕРЕДАНА';
  }catch(error){
    status.textContent='Не удалось отправить заявку. Попробуй ещё раз.';
