@@ -154,100 +154,112 @@
   },
   "gallery": [
     {
-      "image": "./images/archive/archive-01.webp",
-      "alt": "Наш альбом — кадр 1"
+      "image": "./images/archive/new-01.webp",
+      "alt": "НЕПУТЁВКИ — фото 01"
     },
     {
-      "image": "./images/archive/archive-14.webp",
-      "alt": "Наш альбом — кадр 2"
+      "image": "./images/archive/new-02.webp",
+      "alt": "НЕПУТЁВКИ — фото 02"
     },
     {
-      "image": "./images/archive/archive-02.webp",
-      "alt": "Наш альбом — кадр 3"
+      "image": "./images/archive/new-03.webp",
+      "alt": "НЕПУТЁВКИ — фото 03"
     },
     {
-      "image": "./images/archive/archive-03.webp",
-      "alt": "Наш альбом — кадр 4"
+      "image": "./images/archive/new-04.webp",
+      "alt": "НЕПУТЁВКИ — фото 04"
     },
     {
-      "image": "./images/archive/archive-24.webp",
-      "alt": "Наш альбом — кадр 5"
+      "image": "./images/archive/new-05.webp",
+      "alt": "НЕПУТЁВКИ — фото 05"
     },
     {
-      "image": "./images/archive/archive-04.webp",
-      "alt": "Наш альбом — кадр 6"
+      "image": "./images/archive/new-06.webp",
+      "alt": "НЕПУТЁВКИ — фото 06"
     },
     {
-      "image": "./images/archive/archive-18.webp",
-      "alt": "Наш альбом — кадр 7"
+      "image": "./images/archive/new-07.webp",
+      "alt": "НЕПУТЁВКИ — фото 07"
     },
     {
-      "image": "./images/archive/archive-05.webp",
-      "alt": "Наш альбом — кадр 8"
+      "image": "./images/archive/new-08.webp",
+      "alt": "НЕПУТЁВКИ — фото 08"
     },
     {
-      "image": "./images/archive/archive-06.webp",
-      "alt": "Наш альбом — кадр 9"
+      "image": "./images/archive/new-09.webp",
+      "alt": "НЕПУТЁВКИ — фото 09"
     },
     {
-      "image": "./images/archive/archive-19.webp",
-      "alt": "Наш альбом — кадр 10"
+      "image": "./images/archive/new-10.webp",
+      "alt": "НЕПУТЁВКИ — фото 10"
     },
     {
-      "image": "./images/archive/archive-07.webp",
-      "alt": "Наш альбом — кадр 11"
+      "image": "./images/archive/new-11.webp",
+      "alt": "НЕПУТЁВКИ — фото 11"
     },
     {
-      "image": "./images/archive/archive-09.webp",
-      "alt": "Наш альбом — кадр 12"
+      "image": "./images/archive/new-12.webp",
+      "alt": "НЕПУТЁВКИ — фото 12"
     },
     {
-      "image": "./images/archive/archive-08.webp",
-      "alt": "Наш альбом — кадр 13"
+      "image": "./images/archive/new-13.webp",
+      "alt": "НЕПУТЁВКИ — фото 13"
     },
     {
-      "image": "./images/archive/archive-20.webp",
-      "alt": "Наш альбом — кадр 14"
+      "image": "./images/archive/new-14.webp",
+      "alt": "НЕПУТЁВКИ — фото 14"
     },
     {
-      "image": "./images/archive/archive-10.webp",
-      "alt": "Наш альбом — кадр 15"
+      "image": "./images/archive/new-15.webp",
+      "alt": "НЕПУТЁВКИ — фото 15"
     },
     {
-      "image": "./images/archive/archive-21.webp",
-      "alt": "Наш альбом — кадр 16"
+      "image": "./images/archive/new-16.webp",
+      "alt": "НЕПУТЁВКИ — фото 16"
     },
     {
-      "image": "./images/archive/archive-11.webp",
-      "alt": "Наш альбом — кадр 17"
+      "image": "./images/archive/new-17.webp",
+      "alt": "НЕПУТЁВКИ — фото 17"
     },
     {
-      "image": "./images/archive/archive-23.webp",
-      "alt": "Наш альбом — кадр 18"
+      "image": "./images/archive/new-18.webp",
+      "alt": "НЕПУТЁВКИ — фото 18"
     },
     {
-      "image": "./images/archive/archive-12.webp",
-      "alt": "Наш альбом — кадр 19"
+      "image": "./images/archive/new-19.webp",
+      "alt": "НЕПУТЁВКИ — фото 19"
     },
     {
-      "image": "./images/archive/archive-17.webp",
-      "alt": "Наш альбом — кадр 20"
+      "image": "./images/archive/new-20.webp",
+      "alt": "НЕПУТЁВКИ — фото 20"
     },
     {
-      "image": "./images/archive/archive-13.webp",
-      "alt": "Наш альбом — кадр 21"
+      "image": "./images/archive/new-21.webp",
+      "alt": "НЕПУТЁВКИ — фото 21"
     },
     {
-      "image": "./images/archive/archive-22.webp",
-      "alt": "Наш альбом — кадр 22"
+      "image": "./images/archive/new-22.webp",
+      "alt": "НЕПУТЁВКИ — фото 22"
     },
     {
-      "image": "./images/archive/archive-16.webp",
-      "alt": "Наш альбом — кадр 23"
+      "image": "./images/archive/new-23.webp",
+      "alt": "НЕПУТЁВКИ — фото 23"
     },
     {
-      "image": "./images/archive/archive-15.webp",
-      "alt": "Наш альбом — кадр 24"
+      "image": "./images/archive/new-24.webp",
+      "alt": "НЕПУТЁВКИ — фото 24"
+    },
+    {
+      "image": "./images/archive/new-25.webp",
+      "alt": "НЕПУТЁВКИ — фото 25"
+    },
+    {
+      "image": "./images/archive/new-26.webp",
+      "alt": "НЕПУТЁВКИ — фото 26"
+    },
+    {
+      "image": "./images/archive/new-27.webp",
+      "alt": "НЕПУТЁВКИ — фото 27"
     }
   ],
   "controls": {
