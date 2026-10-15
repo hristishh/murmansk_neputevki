@@ -46,6 +46,45 @@ content:
       - name: instagram_url
         label: Instagram ссылка
         type: string
+      - name: intro_heading
+        label: О поездке — заголовок
+        type: text
+      - name: facts_heading
+        label: Главное — заголовок
+        type: text
+      - name: route_heading
+        label: Маршрут — заголовок
+        type: text
+      - name: days_heading
+        label: Программа — заголовок
+        type: text
+      - name: aurora_heading
+        label: Сияние — заголовок
+        type: text
+      - name: hibiny_heading
+        label: Хибины — заголовок
+        type: text
+      - name: people_heading
+        label: Команда — заголовок
+        type: text
+      - name: constructor_heading
+        label: Конструктор — заголовок
+        type: text
+      - name: constructor_description
+        label: Конструктор — описание
+        type: text
+      - name: house_heading
+        label: Проживание — заголовок
+        type: text
+      - name: included_heading
+        label: В стоимость — заголовок
+        type: text
+      - name: faq_heading
+        label: Вопросы — заголовок
+        type: text
+      - name: end_heading
+        label: Финальный заголовок
+        type: text
       - name: days
         label: Программа по дням
         type: object
