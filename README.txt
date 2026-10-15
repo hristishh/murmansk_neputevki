@@ -1,1 +1,1 @@
-Загрузите в корень GitHub index.html, favicon.png и favicon-180.png. НЕ заменяйте content/site.json и .pages.yml. Telegram deep-link остаётся; серверная часть бота ещё не подключена.
+Замените ТОЛЬКО index.html в GitHub. Не трогайте content/site.json, .pages.yml, images или fonts. Исправлена видимость формы и прокрутка внутри корзины. Проверяйте после нового деплоя Cloudflare.
