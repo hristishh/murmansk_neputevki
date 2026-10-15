@@ -167,8 +167,8 @@ let interfaceCopy = {};
 try { const r=await fetch('./content/interface.json',{cache:'no-cache'});if(r.ok)interfaceCopy=await r.json(); } catch(e) { console.warn('Interface CMS unavailable',e); }
 const getUi=(key,fallback)=>{const [group,field]=key.split('.');const value=interfaceCopy[group]?.[field];
 // Upgrade only the previous default copy; preserve any custom CMS wording.
-if(key==='hero.t006'&&value==='СЕВЕРНОЕ СИЯНИЕ · И ДВАДЦАТЬ ЧЕЛОВЕК,')return 'СЕВЕРНОЕ СИЯНИЕ · И ЛЮДИ, С КОТОРЫМИ';
-if(key==='hero.t007'&&value==='КОТОРЫЕ ПОКА НЕ ЗНАЮТ ДРУГ ДРУГА.')return 'ЗАХОЧЕШЬ ПОЕХАТЬ ЕЩЁ КУДА-НИБУДЬ.';
+if(key==='hero.t006'&&value==='СЕВЕРНОЕ СИЯНИЕ · И ОДНА БОЛЬШАЯ КОМПАНИЯ,')return 'СЕВЕРНОЕ СИЯНИЕ · И ЛЮДИ, С КОТОРЫМИ';
+if(key==='hero.t007'&&value==='ЧАСТЬЮ КОТОРОЙ МОЖЕШЬ СТАТЬ ТЫ.')return 'ЗАХОЧЕШЬ ПОЕХАТЬ ЕЩЁ КУДА-НИБУДЬ.';
 return value ?? fallback;};
 document.querySelectorAll('[data-np-copy]').forEach(el=>{const v=getUi(el.dataset.npCopy,null);if(typeof v==='string')el.textContent=v;});
 document.querySelectorAll('[data-np-image]').forEach(el=>{const v=getUi(el.dataset.npImage,null);if(typeof v==='string'&&v)el.src=v;});
