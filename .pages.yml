@@ -1,0 +1,110 @@
+media:
+  input: images
+  output: /images
+content:
+  - name: site
+    label: Настройки тура
+    type: file
+    path: content/site.json
+    fields:
+      - name: base_price
+        label: Базовая стоимость (₽)
+        type: number
+      - name: hero_eyebrow
+        label: Надпись над заголовком
+        type: string
+      - name: hero_title_line1
+        label: Главный заголовок — строка 1
+        type: string
+      - name: hero_title_line2
+        label: Главный заголовок — строка 2
+        type: string
+      - name: hero_title_line3
+        label: Главный заголовок — строка 3
+        type: string
+      - name: hero_description
+        label: Текст на первом экране
+        type: text
+      - name: intro_text
+        label: О поездке — абзац 1
+        type: text
+      - name: intro_second_text
+        label: О поездке — абзац 2
+        type: text
+      - name: hibiny_description
+        label: Хибины — описание
+        type: text
+      - name: included_text
+        label: Что включено
+        type: text
+      - name: excluded_text
+        label: Что отдельно
+        type: text
+      - name: telegram_url
+        label: Telegram ссылка
+        type: string
+      - name: instagram_url
+        label: Instagram ссылка
+        type: string
+      - name: days
+        label: Программа по дням
+        type: object
+        list: true
+        fields:
+          - name: number
+            label: Номер дня
+            type: string
+          - name: title
+            label: Заголовок
+            type: string
+          - name: description
+            label: Описание
+            type: text
+          - name: included
+            label: Что входит (через |)
+            type: text
+          - name: image
+            label: Путь к фото
+            type: image
+          - name: note
+            label: Примечание
+            type: text
+      - name: activities
+        label: Дополнительные активности
+        type: object
+        list: true
+        fields:
+          - name: name
+            label: Название
+            type: string
+          - name: description
+            label: Описание
+            type: text
+          - name: price
+            label: Цена в рублях
+            type: number
+          - name: image
+            label: Фотография
+            type: image
+      - name: images
+        label: Фотографии основных блоков
+        type: object
+        fields:
+          - name: hero_poster
+            label: Постер первого экрана
+            type: image
+          - name: intro_first
+            label: О поездке — фото 1
+            type: image
+          - name: intro_second
+            label: О поездке — фото 2
+            type: image
+          - name: intro_third
+            label: О поездке — фото 3
+            type: image
+          - name: hibiny_first
+            label: Хибины — фото 1
+            type: image
+          - name: hibiny_second
+            label: Хибины — фото 2
+            type: image
